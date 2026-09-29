@@ -1,0 +1,458 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>凌雀跳绳系列 · 100 / 200 / 300 三阶分级 | LI-NING</title>
+<meta name="description" content="凌雀跳绳系列以「1 分钟跳绳圈数」分级：100、200、300 三阶递进。竞速绳 LJSW300、珠节跳绳 LJSW200 / LJSW100，含配色、规格、执行标准与常见问题。">
+<meta name="theme-color" content="#FF8F1C">
+<style>
+:root{
+  --oq:#FF8F1C; --oq-deep:#E07500; --oq-tint:#FFF4E8; --oq-tint2:#FFF7F0;
+  --ink:#1A1E21; --body:#5A6165; --muted:#8A9296;
+  --line:#E3E6E8; --grey:#EFF1F2; --grey-soft:#F8F9FA;
+  --dark:#1C2023; --dark-2:#242A2E; --dark-line:#2E353A;
+  --darker:#14171A; --darkest:#0F1214;
+  --pad:clamp(20px,8.33vw,120px); --sec:clamp(64px,7vw,104px);
+  --r-lg:24px; --r-md:16px; --r-pill:999px;
+  --cw:1200px;
+  font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Source Han Sans SC","Noto Sans SC",sans-serif;
+  color:var(--ink);
+  -webkit-font-smoothing:antialiased;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:#fff;line-height:1.6}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:calc(var(--cw) + var(--pad)*2);margin:0 auto;padding:0 var(--pad)}
+.eyebrow{font-size:13px;font-weight:600;letter-spacing:.04em;color:var(--oq-deep);margin:0 0 16px}
+h1,h2,h3{margin:0;font-weight:900;letter-spacing:-.01em;line-height:1.24}
+h2{font-size:clamp(28px,3.3vw,44px)}
+.lead{color:var(--body);font-size:clamp(15px,1.4vw,18px);line-height:1.75;margin:16px 0 0}
+.sec{padding:var(--sec) 0}
+.sec--grey{background:var(--grey)}
+.sec--dark{background:var(--dark);color:#fff}
+.sec--dark h2{color:#fff}
+.sec--end{background:var(--dark);text-align:center;padding:clamp(72px,8vw,110px) 0;position:relative;overflow:hidden}
+.sec--end::before{content:"";position:absolute;left:50%;top:50%;width:min(900px,120vw);aspect-ratio:1;transform:translate(-50%,-50%);
+  background:radial-gradient(circle,rgba(255,143,28,.28) 0%,rgba(255,143,28,.08) 48%,transparent 70%);pointer-events:none}
+.sec--end>*{position:relative}
+
+/* ---------- header ---------- */
+.hdr{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.92);backdrop-filter:saturate(1.6) blur(12px);
+  border-bottom:1px solid var(--line)}
+.hdr .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px;height:72px}
+.brand{display:flex;align-items:center;gap:12px;min-width:0}
+.brand img{width:96px;height:46px;object-fit:contain;flex:none}
+.brand b{font-size:18px;letter-spacing:.02em;white-space:nowrap}
+/* 左侧悬浮导航条：脱离文档流，不占内容宽度
+   >=1400px 完整版 84px（全称）｜ 680–1399px 收成 44px 窄条（两字简称）｜ <680px 隐藏（左右边距不足会压内容） */
+.rail{display:none}
+@media(min-width:680px){
+  .rail{display:flex;flex-direction:column;gap:2px;position:fixed;left:6px;top:96px;
+    background:#fff;border:1px solid #E6E9EB;border-radius:16px;z-index:30;
+    box-shadow:0 10px 30px -12px rgba(30,35,40,.18)}
+  .rail a{display:block;border-radius:10px;color:var(--body);white-space:nowrap}
+  .rail a:hover{background:var(--grey-soft);color:var(--oq-deep)}
+  .rail a.on{background:var(--oq-tint);color:var(--oq-deep);font-weight:600}
+  .rail .sm{display:none}
+}
+/* 窄屏：44px 窄条，只留两字简称 */
+@media(min-width:680px) and (max-width:1399px){
+  .rail{width:44px;padding:8px}
+  .rail a{padding:8px 2px;font-size:11px;text-align:center}
+  .rail .lg{display:none}
+  .rail .sm{display:inline}
+}
+/* 宽屏：84px 完整版，显示全称 */
+@media(min-width:1400px){
+  .rail{width:84px;padding:12px;left:8px;top:104px;border-radius:18px}
+  .rail a{padding:8px 9px;font-size:12px}
+  .rail .lg{display:inline}
+  .rail .sm{display:none}
+}
+
+/* ---------- hero ---------- */
+.hero{padding:clamp(48px,7vw,92px) 0 clamp(56px,7vw,100px);position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;left:0;right:0;top:-30%;height:150%;
+  background:radial-gradient(60% 55% at 62% 42%,rgba(255,143,28,.18) 0%,rgba(255,143,28,.05) 52%,transparent 72%);pointer-events:none}
+.hero .wrap{position:relative;display:flex;align-items:center;gap:clamp(28px,3vw,44px)}
+.hero-copy{flex:0 0 300px;min-width:0}
+.badge{display:inline-flex;align-items:center;gap:8px;padding:7px 16px;border-radius:var(--r-pill);background:var(--oq-tint);
+  color:var(--oq-deep);font-size:13px;font-weight:600}
+.badge i{width:6px;height:6px;border-radius:50%;background:var(--oq);flex:none}
+h1{margin:0;font-size:clamp(38px,4.6vw,64px);line-height:1.16}
+h1 span{color:var(--oq);display:block}
+.hero .lead{max-width:34em}
+.trust{margin:26px 0 0;font-size:13px;color:var(--muted)}
+.hero-vis{flex:1 1 520px;min-width:0;background:#fff;border:1px solid #EDEFF1;border-radius:28px;padding:20px;
+  box-shadow:0 18px 48px -12px rgba(140,107,77,.14)}
+.hero-vis img{width:100%;height:auto;border-radius:8px}
+@media(max-width:900px){.hero .wrap{flex-direction:column;align-items:stretch}.hero-vis{order:-1}.hero-copy{flex:1 1 auto}}
+
+/* ---------- tier ---------- */
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:52px}
+@media(max-width:900px){.grid3{grid-template-columns:1fr;gap:16px;margin-top:32px}}
+.tcard{background:#fff;border:1px solid var(--line);border-radius:var(--r-lg);padding:28px;display:flex;flex-direction:column;gap:18px}
+.tcard-top{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.tnum{font-size:52px;font-weight:800;line-height:1;font-family:"Inter","Helvetica Neue",Arial,sans-serif;letter-spacing:-.02em}
+.tnum.n1{color:#FFB067}.tnum.n2{color:#FF9E3D}.tnum.n3{color:var(--oq)}
+.ttag{padding:6px 14px;border-radius:var(--r-pill);background:#F2F4F5;color:var(--body);font-size:13px;font-weight:500;white-space:nowrap}
+.timg{height:264px;display:flex;align-items:center;justify-content:center}
+.timg img{max-height:100%;width:auto;object-fit:contain}
+.tmetric{background:var(--oq-tint);border-radius:12px;padding:11px 16px;text-align:center;color:var(--oq-deep);font-weight:600;font-size:16px}
+.tinfo{display:flex;flex-direction:column;gap:8px;font-size:14px;line-height:1.7;color:var(--body)}
+.tcode{font-size:13px;color:var(--muted);font-family:"Inter",monospace,sans-serif}
+
+/* ---------- product rows ---------- */
+.prow{display:flex;align-items:center;gap:clamp(28px,5vw,64px);margin-top:clamp(48px,6vw,76px)}
+.prow:first-of-type{margin-top:56px}
+.prow.rev{flex-direction:row-reverse}
+.pvis{flex:0 0 50%;max-width:600px;background:var(--grey-soft);border:1px solid #EDEFF1;border-radius:var(--r-lg);padding:20px}
+.pvis img{width:100%;height:auto}
+.pcopy{flex:1 1 0;min-width:0;display:flex;flex-direction:column;gap:20px}
+.pill{align-self:flex-start;padding:7px 16px;border-radius:var(--r-pill);background:var(--oq-tint);color:var(--oq-deep);font-size:13px;font-weight:600}
+.pcopy h3{font-size:clamp(24px,2.6vw,34px)}
+.price{display:flex;align-items:baseline;gap:12px}
+.price b{font-size:40px;font-weight:800;color:var(--oq);font-family:"Inter",Arial,sans-serif;line-height:1}
+.price span{font-size:14px;color:var(--muted)}
+.pdesc{color:var(--body);font-size:16px;line-height:1.75;margin:0}
+.blist{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:12px}
+.blist li{position:relative;padding-left:18px;font-size:15px;line-height:1.7;color:#3A4145}
+.blist li::before{content:"";position:absolute;left:0;top:.62em;width:6px;height:6px;border-radius:50%;background:var(--oq)}
+.pspec{margin:0;font-size:13px;line-height:1.85;color:var(--muted)}
+@media(max-width:900px){.prow,.prow.rev{flex-direction:column;align-items:stretch}.pvis{flex:none;max-width:none}}
+
+/* ---------- tech ---------- */
+.tgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:56px}
+@media(max-width:900px){.tgrid{grid-template-columns:1fr}}
+.tc{background:var(--dark-2);border:1px solid var(--dark-line);border-radius:20px;padding:28px;display:flex;flex-direction:column;gap:14px}
+.tc svg{width:30px;height:30px;flex:none}
+.tc h3{font-size:19px;font-weight:600;color:#fff}
+.tc p{margin:0;font-size:14px;line-height:1.7;color:#9AA3A8}
+.band{margin-top:56px;border-radius:20px;overflow:hidden}
+.band img{width:100%;height:auto;aspect-ratio:1552 / 716;object-fit:cover}
+.bandcap{margin:18px 0 0;font-size:14px;color:var(--muted)}
+
+/* ---------- champion ---------- */
+.crow{display:flex;align-items:center;gap:clamp(28px,5vw,72px)}
+.cvis{flex:0 0 420px;max-width:420px}
+.cvis img{width:100%;height:auto;border-radius:var(--r-lg)}
+.ccopy{flex:1 1 0;min-width:0}
+.kgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:28px}
+@media(max-width:520px){.kgrid{grid-template-columns:1fr}}
+.kc{background:var(--grey-soft);border-radius:var(--r-md);padding:24px}
+.kc b{display:block;font-size:17px;font-weight:600;color:var(--ink)}
+.kc p{margin:8px 0 0;font-size:14px;line-height:1.7;color:var(--muted)}
+@media(max-width:900px){.crow{flex-direction:column;align-items:stretch}.cvis{flex:none;max-width:420px}}
+
+/* ---------- spec table ---------- */
+.tw{overflow-x:auto;margin-top:48px;border:1px solid var(--line);border-radius:20px;background:#fff;-webkit-overflow-scrolling:touch}
+table{width:100%;border-collapse:collapse;min-width:760px}
+th,td{text-align:left;padding:18px 24px;font-size:15px;vertical-align:top}
+thead th{background:var(--ink);color:#fff;font-weight:600;font-size:15px}
+thead th:last-child{color:var(--oq)}
+tbody tr{background:#fff}
+tbody tr:nth-child(odd){background:var(--grey-soft)}
+td:first-child{width:200px;color:var(--body);font-weight:500}
+td:last-child,th:last-child{background:var(--oq-tint2)}
+tbody tr:nth-child(odd) td:last-child{background:#FFF2E6}
+td.num b{font-size:24px;font-weight:800;color:var(--oq);font-family:"Inter",Arial,sans-serif}
+tbody tr.price-row td{background:#fff}
+tbody tr.price-row:nth-child(odd){background:var(--grey-soft)}
+
+/* ---------- faq ---------- */
+.flist{display:flex;flex-direction:column;gap:14px;margin-top:44px}
+.fitem{background:var(--grey-soft);border-radius:var(--r-md);padding:26px 28px}
+.fitem h3{font-size:19px;font-weight:600}
+.fitem p{margin:10px 0 0;font-size:15px;line-height:1.8;color:var(--body)}
+
+/* ---------- end + footer ---------- */
+.end h2{font-size:clamp(32px,4.4vw,52px)}
+.end p{margin:20px 0 0;color:#9AA3A8;font-size:18px}
+.end small{display:block;margin-top:18px;color:#6F777C;font-size:13px}
+footer{background:var(--darker);color:#fff}
+.ftop{display:flex;justify-content:space-between;gap:48px;padding:64px 0;flex-wrap:wrap}
+.fbrand{max-width:400px}
+.fbrand img{width:117px;height:56px;object-fit:contain;margin-bottom:14px}
+.fbrand b{font-size:17px}
+.fbrand p{margin:8px 0 0;font-size:14px;color:#6F777C}
+.fcols{display:flex;gap:48px}
+.fcol{min-width:120px}
+.fcol b{display:block;font-size:14px;font-weight:600;margin-bottom:12px}
+.fcol a{display:block;font-size:14px;color:#6F777C;margin-bottom:12px}
+.fcol a:hover{color:var(--oq)}
+.fbot{display:flex;justify-content:space-between;gap:24px;padding:26px 0;background:var(--darkest);flex-wrap:wrap}
+.fbot div{font-size:13px;color:#6F777C}
+@media(max-width:900px){.fbot{margin:0 calc(-1*var(--pad));padding:26px var(--pad)}}
+@media(min-width:901px){.fbot{margin:0 calc(-1*var(--pad));padding:26px var(--pad)}}
+</style>
+</head>
+<body>
+
+<header class="hdr">
+  <div class="wrap">
+    <a class="brand" href="#top">
+      <img src="assets/logo-lingque.png" alt="凌雀 LINGQUE">
+      <b>LINGQUE</b>
+    </a>
+  </div>
+</header>
+
+<nav class="rail" aria-label="页面导航">
+  <a class="on" href="#tier"><span class="lg">产品分级</span><span class="sm">分级</span></a>
+  <a href="#series"><span class="lg">产品系列</span><span class="sm">系列</span></a>
+  <a href="#tech"><span class="lg">技术解析</span><span class="sm">技术</span></a>
+  <a href="#champ"><span class="lg">冠军背书</span><span class="sm">冠军</span></a>
+  <a href="#faq"><span class="lg">常见问题</span><span class="sm">问答</span></a>
+</nav>
+
+<main id="top">
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-copy">
+        <h1>凌雀<span>专业跳绳</span></h1>
+      </div>
+      <div class="hero-vis">
+        <img src="assets/hero-tiers.jpg" alt="凌雀跳绳 100 / 200 / 300 三阶产品" width="1600" height="846">
+      </div>
+    </div>
+  </section>
+
+  <!-- 分级体系 -->
+  <section class="sec sec--grey" id="tier">
+    <div class="wrap">
+      <p class="eyebrow">分级体系 · TIER SYSTEM</p>
+      <p class="lead">不用纠结参数。先测一次 1 分钟跳绳圈数，直接对号入座。</p>
+
+      <div class="grid3">
+        <article class="tcard">
+          <div class="tcard-top"><span class="tnum n1">100</span><span class="ttag">初学儿童</span></div>
+          <div class="timg"><img src="assets/tier-100.jpg" alt="LJSW100 珠节跳绳 灰橙配色" width="844" height="1125"></div>
+          <div class="tmetric">1 分钟 0~100 圈</div>
+          <div class="tinfo"><span>定位 · 训练绳 / 花式绳 2 用</span><span>场景 · 初学跳绳、花式训练</span></div>
+          <div class="tcode">LJSW100-T1 / T2 / T3</div>
+        </article>
+        <article class="tcard">
+          <div class="tcard-top"><span class="tnum n2">200</span><span class="ttag">中阶跳绳儿童</span></div>
+          <div class="timg"><img src="assets/tier-200.jpg" alt="LJSW200 珠节跳绳 灰橙配色" width="844" height="1125"></div>
+          <div class="tmetric">1 分钟 100~200 圈</div>
+          <div class="tinfo"><span>定位 · 训练绳 / 花式绳 2 用</span><span>场景 · 中阶跳绳训练、花式训练</span></div>
+          <div class="tcode">LJSW200-T1 / T2 / T3</div>
+        </article>
+        <article class="tcard">
+          <div class="tcard-top"><span class="tnum n3">300</span><span class="ttag">高阶青少年 / 初阶比赛</span></div>
+          <div class="timg"><img src="assets/tier-300.jpg" alt="LJSW300 竞速运动跳绳 灰橙配色" width="1080" height="1440"></div>
+          <div class="tmetric">1 分钟 200~300 圈</div>
+          <div class="tinfo"><span>定位 · 竞速绳（训练 / 比赛）</span><span>场景 · 训练与初阶比赛</span></div>
+          <div class="tcode">LJSW300-S1 / S2 / S3</div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 产品系列 -->
+  <section class="sec" id="series">
+    <div class="wrap">
+      <p class="eyebrow">产品系列 · PRODUCT LINE</p>
+      <h2>三款产品，各管一个赛道</h2>
+      <p class="lead">竞速绳追速度，珠节绳护初学。配置、卖点、规格一次看全。</p>
+
+      <article class="prow">
+        <div class="pvis"><img src="assets/trio-100.jpg" alt="LJSW100 珠节跳绳 灰橙 / 粉色 / 蓝色" width="1600" height="714"></div>
+        <div class="pcopy">
+          <span class="pill">100 阶 · 珠节跳绳</span>
+          <h3>LJSW100 · 初学第一根</h3>
+          <div class="price"><b>¥95</b><span>吊牌价</span></div>
+          <p class="pdesc">21cm 加长手柄，初学省力少打脚；超软 TPU 竹节，打腿不怕痛。手柄尾部可拆装，长度能自己调。</p>
+          <ul class="blist">
+            <li>ABS 21cm 加长手柄 — 初学省力，少打脚</li>
+            <li>TPU 超软竹节 — 打腿不怕痛，不易打结</li>
+            <li>手柄尾部可拆装 — 手柄长度可自行调节</li>
+          </ul>
+          <p class="pspec">绳 φ6（含珠子）×2800mm，珠子总长 2410mm · 手柄 φ20×210mm · 绳 TPU、涤纶 · 手柄 ABS · 配色 灰橙 / 粉色 / 蓝色</p>
+        </div>
+      </article>
+
+      <article class="prow rev">
+        <div class="pvis"><img src="assets/trio-200.jpg" alt="LJSW200 珠节跳绳 灰橙 / 粉色 / 蓝色" width="1600" height="714"></div>
+        <div class="pcopy">
+          <span class="pill">200 阶 · 珠节跳绳</span>
+          <h3>LJSW200 · 中阶训练主力</h3>
+          <div class="price"><b>¥85</b><span>吊牌价</span></div>
+          <p class="pdesc">手柄内置钢质轴承，TPU 珠节绳体兼顾柔韧与耐磨。中阶训练与花式的日常主力绳。</p>
+          <ul class="blist">
+            <li>MR128 高转速轴承 — 极顺不打结</li>
+            <li>外 5 股单芯 + 内 2 股 3 芯 — 双层绳芯防缠绕</li>
+            <li>专利「飞碟珠」对称配重 — 减少飘绳绕绳</li>
+          </ul>
+          <p class="pspec">绳 φ6（含珠子）×2800mm，珠子总长 2410mm · 手柄 φ20×152mm · 绳 TPU、涤纶 · 手柄 ABS · 配色 灰橙 / 粉色 / 蓝色</p>
+        </div>
+      </article>
+
+      <article class="prow">
+        <div class="pvis"><img src="assets/trio-300.jpg" alt="LJSW300 竞速运动跳绳 灰橙 / 粉色 / 蓝色" width="1600" height="714"></div>
+        <div class="pcopy">
+          <span class="pill">300 阶 · 竞速绳</span>
+          <h3>LJSW300 · 为速度与比赛</h3>
+          <div class="price"><b>¥85</b><span>吊牌价</span></div>
+          <p class="pdesc">ABS 手柄 + 防滑纹理 + 硅胶圈，配高转速轴承。双绳配置与可调绳长，把速度与身高都照顾到了。</p>
+          <ul class="blist">
+            <li>双绳配置 3m / 2.6m — 一绳用多年，个高也能用</li>
+            <li>PVC 包胶钢丝绳 — 耐用 30 万次（测试中）</li>
+            <li>可调节绳长结构，附赠六角扳手 — 适合不同身高</li>
+          </ul>
+          <p class="pspec">绳 φ2.5×3000mm / φ2.5×2600mm · 手柄 φ23×140mm · 绳 PU、钢 · 手柄 ABS、钢、硅胶 · 配色 灰橙 / 粉色 / 蓝色</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- 技术解析 -->
+  <section class="sec sec--dark" id="tech">
+    <div class="wrap">
+      <p class="eyebrow" style="color:var(--oq)">技术解析 · TECHNOLOGY</p>
+      <h2>每一处，都为少打脚、少打结</h2>
+      <p class="lead" style="color:#9AA3A8">从轴承到珠节，拆开看这六件事。</p>
+
+      <div class="tgrid">
+        <div class="tc">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="9" stroke="#FF8F1C" stroke-width="2"/><circle cx="12" cy="12" r="3" stroke="#FF8F1C" stroke-width="2"/><circle cx="12" cy="3.6" r="1.2" fill="#FF8F1C"/><circle cx="20.4" cy="12" r="1.2" fill="#FF8F1C"/><circle cx="12" cy="20.4" r="1.2" fill="#FF8F1C"/><circle cx="3.6" cy="12" r="1.2" fill="#FF8F1C"/></svg>
+          <h3>MR128 高转速轴承</h3><p>极顺不打结，摇绳不费力，转起来没有顿挫感。</p>
+        </div>
+        <div class="tc">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="7" cy="13" r="4.2" stroke="#FF8F1C" stroke-width="2"/><circle cx="14" cy="8" r="3.2" stroke="#FF8F1C" stroke-width="2"/><circle cx="16.5" cy="16.5" r="3.6" stroke="#FF8F1C" stroke-width="2"/></svg>
+          <h3>专利「飞碟珠」科学配重</h3><p>对称配重串珠设计，甩绳更稳，减少飘绳绕绳。</p>
+        </div>
+        <div class="tc">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2.5l7.5 3v6.2c0 4.6-3.1 8.4-7.5 9.8-4.4-1.4-7.5-5.2-7.5-9.8V5.5l7.5-3z" stroke="#FF8F1C" stroke-width="2" stroke-linejoin="round"/><path d="M8.8 12.2l2.2 2.2 4.2-4.4" stroke="#FF8F1C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <h3>超软 TPU 竹节</h3><p>TPU 珠节绳体，柔韧耐磨，打腿不怕痛。</p>
+        </div>
+        <div class="tc">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3l9 5-9 5-9-5 9-5z" stroke="#FF8F1C" stroke-width="2" stroke-linejoin="round"/><path d="M3 12.6l9 5 9-5" stroke="#FF8F1C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M3 17.2l9 5 9-5" stroke="#FF8F1C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <h3>双层绳芯结构</h3><p>外 5 股单芯 + 内 2 股 3 芯，耐用防缠绕。</p>
+        </div>
+        <div class="tc">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="8" y="3" width="8" height="18" rx="4" stroke="#FF8F1C" stroke-width="2"/><path d="M9.6 9h4.8M9.6 15h4.8" stroke="#FF8F1C" stroke-width="1.6" stroke-linecap="round"/></svg>
+          <h3>ABS 21cm 加长手柄</h3><p>初学省力少打脚，手柄尾部可拆装调节长度。</p>
+        </div>
+        <div class="tc">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20 4c0 9-5.4 14-12.5 14H4.5C6 10.8 11.5 6.2 20 4z" stroke="#FF8F1C" stroke-width="2" stroke-linejoin="round"/><path d="M4.5 20c1.8-4.4 4.6-7.6 8.5-9.8" stroke="#FF8F1C" stroke-width="2" stroke-linecap="round"/></svg>
+          <h3>全新料环保材质</h3><p>安全无异味，多项环保材质认证推进中。</p>
+        </div>
+      </div>
+
+      <div class="band"><img src="assets/bead-detail.jpg" alt="凌雀跳绳珠节绳体特写：蓝色与绿色 TPU 竹节串珠结构" width="1552" height="716"></div>
+      <p class="bandcap">超软 TPU 竹节 · 专利「飞碟珠」串珠结构，绳体柔韧不易打结。</p>
+    </div>
+  </section>
+
+  <!-- 冠军背书 -->
+  <section class="sec" id="champ">
+    <div class="wrap crow">
+      <div class="cvis"><img src="assets/champion.jpg" alt="凌雀跳绳代言跳绳冠军" width="506" height="579"></div>
+      <div class="ccopy">
+        <p class="eyebrow">冠军背书 · ENDORSEMENT</p>
+        <h2>跳绳冠军，也在用这套分级</h2>
+        <p class="lead">凌雀全系列由跳绳冠军代言，肖像权已授权 3 年。冠军在用、冠军在测，赛级标准落到每一根绳上。</p>
+        <div class="kgrid">
+          <div class="kc"><b>冠军代言</b><p>肖像权已授权 3 年</p></div>
+          <div class="kc"><b>赛级认证</b><p>多项环保材质认证推进中</p></div>
+          <div class="kc"><b>执行标准</b><p>GB/T 45544—2025</p></div>
+          <div class="kc"><b>全新料制作</b><p>环保材质，安全无异味</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 规格对比 -->
+  <section class="sec sec--grey" id="spec">
+    <div class="wrap">
+      <p class="eyebrow">规格对比 · SPECIFICATION</p>
+      <h2>三款参数，一表看完</h2>
+      <p class="lead" style="font-size:15px;color:var(--muted)">同一货号多款型、多价格时以斜杠并列；价格均为吊牌价。</p>
+
+      <div class="tw">
+        <table>
+          <thead>
+            <tr><th>项目</th><th>100 阶 · 珠节跳绳</th><th>200 阶 · 珠节跳绳</th><th>300 阶 · 竞速绳</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>1 分钟跳绳圈数</td><td>0~100 圈</td><td>100~200 圈</td><td>200~300 圈</td></tr>
+            <tr><td>适用人群</td><td>初学儿童</td><td>中阶跳绳儿童</td><td>高阶青少年 / 初阶比赛运动员</td></tr>
+            <tr><td>绳规格</td><td>φ6（含珠子）×2800mm · 珠子总长 2410mm</td><td>φ6（含珠子）×2800mm · 珠子总长 2410mm</td><td>φ2.5×3000mm + φ2.5×2600mm 双绳配置</td></tr>
+            <tr><td>手柄规格</td><td>ABS φ20×210mm（21cm 加长）</td><td>ABS φ20×152mm</td><td>ABS + 硅胶圈 φ23×140mm</td></tr>
+            <tr><td>绳 / 手柄材质</td><td>绳 TPU、涤纶 · 手柄 ABS</td><td>绳 TPU、涤纶 · 手柄 ABS</td><td>绳 PU、钢 · 手柄 ABS、钢、硅胶</td></tr>
+            <tr class="price-row"><td>吊牌价</td><td class="num"><b>¥95</b></td><td class="num"><b>¥85</b></td><td class="num"><b>¥85</b></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- 常见问题 -->
+  <section class="sec" id="faq">
+    <div class="wrap">
+      <p class="eyebrow">常见问题 · FAQ</p>
+      <h2>买之前，先看这五条</h2>
+      <div class="flist">
+        <div class="fitem">
+          <h3>我到底该选哪一阶？</h3>
+          <p>先测一次 1 分钟跳绳圈数：0~100 选 100 阶，100~200 选 200 阶，200~300 选 300 阶。刚开始学、绳子容易打到腿，优先选 100 阶的 21cm 加长手柄与超软竹节。</p>
+        </div>
+        <div class="fitem">
+          <h3>珠节绳和竞速绳到底差在哪？</h3>
+          <p>珠节绳（100 / 200 阶）绳体带超软 TPU 竹节，打腿不痛、容易上手，适合日常训练与花式；竞速绳（300 阶）是 PVC 包胶钢丝绳配 3m / 2.6m 双绳，主打速度与初阶比赛。</p>
+        </div>
+        <div class="fitem">
+          <h3>孩子长高了，绳子还够用吗？</h3>
+          <p>300 阶配 3m 与 2.6m 两根绳，并支持可调节绳长结构（附赠六角扳手）；100 阶手柄尾部可拆装，手柄长度能按跳绳类型自行调节。</p>
+        </div>
+        <div class="fitem">
+          <h3>手柄会不会滑手、甩出去？</h3>
+          <p>全系手柄均为 ABS 材质并带防滑纹理；300 阶额外增加硅胶圈结构，握感更稳、不易脱手。</p>
+        </div>
+        <div class="fitem">
+          <h3>材质安全吗？有认证吗？</h3>
+          <p>全系采用全新料制作，环保材质、安全无异味；执行标准为 GB/T 45544—2025，赛级认证与多项环保材质认证正在推进中。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 结语 -->
+  <section class="sec--end end">
+    <div class="wrap">
+      <h2>从 100 阶到 300 阶</h2>
+      <p>凌雀跳绳系列，一根绳配一个阶段。</p>
+      <small>李宁授权经销 · 执行标准 GB/T 45544—2025</small>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="ftop">
+      <div class="fbrand">
+        <img src="assets/logo-lingque-white.png" alt="凌雀 LINGQUE">
+        <b>LINGQUE</b>
+        <p>李宁授权经销 · 跳绳系列产品地图</p>
+      </div>
+      <div class="fcols">
+        <div class="fcol"><b>产品</b><a href="#tier">分级体系</a><a href="#series">产品系列</a><a href="#tech">技术解析</a></div>
+        <div class="fcol"><b>支持</b><a href="#champ">冠军背书</a><a href="#faq">常见问题</a><a href="#spec">规格对比</a></div>
+        <div class="fcol"><b>关于</b><a href="#champ">品牌授权</a><a href="#spec">执行标准</a><a href="#champ">渠道素材</a></div>
+      </div>
+    </div>
+  </div>
+  <div class="fbot"><div class="wrap" style="display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;padding:0 var(--pad)">
+    <div>2026 凌雀 LINGQUE · 李宁授权经销</div>
+    <div>执行标准 GB/T 45544—2025 · 赛级认证</div>
+  </div></div>
+</footer>
+
+</body>
+</html>
